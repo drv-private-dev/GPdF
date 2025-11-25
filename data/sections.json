@@ -1,0 +1,20 @@
+{
+  "courseTitle": "Grammaire progressive du Français",
+  "sections": [
+    {
+      "id": "addition_1",
+      "title": "Addition 1",
+      "file": "data/section_addition_1.json"
+    },
+    {
+      "id": "addition_32",
+      "title": "Un litre de lait, beaucoup de beurre, pas de farine",
+      "file": "data/section_addition_32.json"
+    },
+    {
+      "id": "addition_3",
+      "title": "Addition 3",
+      "file": "data/section_addition_3.json"
+    }
+  ]
+}

@@ -1,0 +1,389 @@
+{
+  "title": "Partitif - Un litre de lait, beaucoup de beurre, pas de farine",
+  "questions": [
+    {
+      "id": 1,
+      "text": "un kilo ___ farine",
+      "answer_b64": "ZGU=",
+      "hint": "Коли ми говоримо про кількість (un kilo, un litre, cent grammes), використовуємо прийменник DE [дьо]. Правильна відповідь: un kilo DE farine (один кілограм борошна). Українською: кілограм чого? - борошна."
+    },
+    {
+      "id": 2,
+      "text": "deux cents grammes ___ sucre",
+      "answer_b64": "ZGU=",
+      "hint": "Після виразів кількості (deux cents grammes, un kilo, beaucoup) використовуємо DE [дьо]. Правильна відповідь: deux cents grammes DE sucre (двісті грамів цукру)."
+    },
+    {
+      "id": 3,
+      "text": "une tasse ___ café",
+      "answer_b64": "ZGU=",
+      "hint": "З виразами, що означають ємність або міру (une tasse, un verre, une bouteille), використовуємо DE [дьо]. Правильна відповідь: une tasse DE café (чашка кави)."
+    },
+    {
+      "id": 4,
+      "text": "trois litres ___ lait",
+      "answer_b64": "ZGU=",
+      "hint": "Після кількісних виразів (trois litres, un kilo, beaucoup) ставимо DE [дьо]. Правильна відповідь: trois litres DE lait (три літри молока)."
+    },
+    {
+      "id": 5,
+      "text": "beaucoup ___ beurre",
+      "answer_b64": "ZGU=",
+      "hint": "Вираз BEAUCOUP [боку] означає 'багато' і потребує прийменника DE [дьо]. Правильна відповідь: beaucoup DE beurre (багато масла)."
+    },
+    {
+      "id": 6,
+      "text": "un peu ___ sel",
+      "answer_b64": "ZGU=",
+      "hint": "Вираз UN PEU [ен пе] означає 'трохи' і використовується з DE [дьо]. Правильна відповідь: un peu DE sel (трохи солі)."
+    },
+    {
+      "id": 7,
+      "text": "assez ___ pain",
+      "answer_b64": "ZGU=",
+      "hint": "Вираз ASSEZ [асе] означає 'досить' і вимагає прийменника DE [дьо]. Правильна відповідь: assez DE pain (досить хліба)."
+    },
+    {
+      "id": 8,
+      "text": "un verre ___ eau",
+      "answer_b64": "ZCc=",
+      "hint": "З виразами, що означають ємність (un verre, une bouteille), використовуємо DE [дьо]. Правильна відповідь: un verre D'eau [д'о] (склянка води). Зверніть увагу: перед голосною DE → D'."
+    },
+    {
+      "id": 9,
+      "text": "trois morceaux ___ sucre",
+      "answer_b64": "ZGU=",
+      "hint": "Після кількісних виразів (trois morceaux, beaucoup) ставимо DE [дьо]. Правильна відповідь: trois morceaux DE sucre (три шматочки цукру)."
+    },
+    {
+      "id": 10,
+      "text": "un bouquet ___ fleurs",
+      "answer_b64": "ZGU=",
+      "hint": "Після виразів кількості використовуємо DE [дьо]. Правильна відповідь: un bouquet DE fleurs (букет квітів)."
+    },
+    {
+      "id": 11,
+      "text": "un paquet ___ chips",
+      "answer_b64": "ZGU=",
+      "hint": "З виразами кількості (un paquet, un kilo) використовуємо DE [дьо]. Правильна відповідь: un paquet DE chips (пакет чіпсів)."
+    },
+    {
+      "id": 12,
+      "text": "Il y a ___ lait dans une bouteille de lait.",
+      "answer_b64": "ZHU=",
+      "hint": "Коли ми говоримо про невизначену кількість речовини, використовуємо партитивний артикль DU [дю] (для чоловічого роду). Правильна відповідь: Il y a DU lait (Є молоко). Українською: є трохи молока, є молоко."
+    },
+    {
+      "id": 13,
+      "text": "Il y a ___ eau dans un verre d'eau.",
+      "answer_b64": "ZGUgbCc=",
+      "hint": "Для невизначеної кількості речовини жіночого роду, що починається з голосної, використовуємо DE L' [дьо ль]. Правильна відповідь: Il y a DE L'eau (Є вода)."
+    },
+    {
+      "id": 14,
+      "text": "Il y a ___ farine dans un kilo de farine.",
+      "answer_b64": "ZGUgbGE=",
+      "hint": "Для невизначеної кількості речовини жіночого роду використовуємо DE LA [дьо ля]. Правильна відповідь: Il y a DE LA farine (Є борошно)."
+    },
+    {
+      "id": 15,
+      "text": "Vous mangez ___ poisson?",
+      "answer_b64": "ZHU=",
+      "hint": "У питаннях про невизначену кількість використовуємо партитивний артикль. Для чоловічого роду - DU [дю]. Правильна відповідь: Vous mangez DU poisson? (Ви їсте рибу?)"
+    },
+    {
+      "id": 16,
+      "text": "Vous mangez ___ viande?",
+      "answer_b64": "ZGUgbGE=",
+      "hint": "У питаннях про невизначену кількість для жіночого роду використовуємо DE LA [дьо ля]. Правильна відповідь: Vous mangez DE LA viande? (Ви їсте м'ясо?)"
+    },
+    {
+      "id": 17,
+      "text": "Vous mangez ___ légumes?",
+      "answer_b64": "ZGVz",
+      "hint": "Для множини використовуємо партитивний артикль DES [дьо]. Правильна відповідь: Vous mangez DES légumes? (Ви їсте овочі?)"
+    },
+    {
+      "id": 18,
+      "text": "Vous mangez ___ jambon?",
+      "answer_b64": "ZHU=",
+      "hint": "Для невизначеної кількості чоловічого роду використовуємо DU [дю]. Правильна відповідь: Vous mangez DU jambon? (Ви їсте шинку?)"
+    },
+    {
+      "id": 19,
+      "text": "Non, je ne mange pas ___ poisson.",
+      "answer_b64": "ZGU=",
+      "hint": "У негативній формі партитивний артикль (du, de la, des) завжди перетворюється на DE [дьо] (або D' перед голосною). Правильна відповідь: je ne mange pas DE poisson (я не їм риби)."
+    },
+    {
+      "id": 20,
+      "text": "Non, je ne mange pas ___ viande.",
+      "answer_b64": "ZGU=",
+      "hint": "У негативній формі всі партитивні артиклі змінюються на DE [дьо]. Правильна відповідь: je ne mange pas DE viande (я не їм м'яса)."
+    },
+    {
+      "id": 21,
+      "text": "Non, je ne mange pas ___ légumes.",
+      "answer_b64": "ZGU=",
+      "hint": "У негативній формі DES [дьо] перетворюється на DE [дьо]. Правильна відповідь: je ne mange pas DE légumes (я не їм овочів)."
+    },
+    {
+      "id": 22,
+      "text": "Non, je ne mange pas ___ jambon.",
+      "answer_b64": "ZGU=",
+      "hint": "У негативній формі DU [дю] змінюється на DE [дьо]. Правильна відповідь: je ne mange pas DE jambon (я не їм шинки)."
+    },
+    {
+      "id": 23,
+      "text": "Les végétariens mangent ___ pain.",
+      "answer_b64": "ZHU=",
+      "hint": "Для невизначеної кількості чоловічого роду використовуємо DU [дю]. Правильна відповідь: mangent DU pain (їдять хліб)."
+    },
+    {
+      "id": 24,
+      "text": "Les végétariens mangent ___ fromage.",
+      "answer_b64": "ZHU=",
+      "hint": "Fromage - чоловічого роду, тому використовуємо DU [дю]. Правильна відповідь: mangent DU fromage (їдять сир)."
+    },
+    {
+      "id": 25,
+      "text": "Les végétariens mangent ___ œufs.",
+      "answer_b64": "ZGVz",
+      "hint": "Для множини використовуємо DES [дьо]. Правильна відповідь: mangent DES œufs (їдять яйця)."
+    },
+    {
+      "id": 26,
+      "text": "Les végétariens mangent ___ fruits.",
+      "answer_b64": "ZGVz",
+      "hint": "Для множини використовуємо DES [дьо]. Правильна відповідь: mangent DES fruits (їдять фрукти)."
+    },
+    {
+      "id": 27,
+      "text": "Les végétariens mangent ___ légumes.",
+      "answer_b64": "ZGVz",
+      "hint": "Для множини використовуємо DES [дьо]. Правильна відповідь: mangent DES légumes (їдять овочі)."
+    },
+    {
+      "id": 28,
+      "text": "Les végétariens ne mangent pas ___ viande.",
+      "answer_b64": "ZGU=",
+      "hint": "Вегетаріанці НЕ їдять м'ясо, тому використовуємо негативну форму. У негативній формі партитивний артикль стає DE [дьо]. Правильна відповідь: ne mangent pas DE viande (не їдять м'яса)."
+    },
+    {
+      "id": 29,
+      "text": "Les végétariens ne mangent pas ___ poisson.",
+      "answer_b64": "ZGU=",
+      "hint": "У негативній формі партитивний артикль стає DE [дьо]. Правильна відповідь: ne mangent pas DE poisson (не їдять риби)."
+    },
+    {
+      "id": 30,
+      "text": "Les végétariens ne mangent pas ___ charcuterie.",
+      "answer_b64": "ZGU=",
+      "hint": "У негативній формі всі артиклі (du, de la, des) перетворюються на DE [дьо]. Правильна відповідь: ne mangent pas DE charcuterie (не їдять ковбасних виробів)."
+    },
+    {
+      "id": 31,
+      "text": "Dans mon appartement, il y a trop ___ bruit.",
+      "answer_b64": "ZGU=",
+      "hint": "Після виразів кількості (trop, beaucoup, assez) використовуємо DE [дьо]. Правильна відповідь: trop DE bruit (забагато шуму)."
+    },
+    {
+      "id": 32,
+      "text": "Dans mon appartement, il n'y a pas assez ___ lumière.",
+      "answer_b64": "ZGU=",
+      "hint": "Після ASSEZ [асе] використовуємо DE [дьо]. Правильна відповідь: pas assez DE lumière (недостатньо світла)."
+    },
+    {
+      "id": 33,
+      "text": "Dans ces spaghettis, il y a trop ___ sel.",
+      "answer_b64": "ZGU=",
+      "hint": "Після TROP [тро] використовуємо DE [дьо]. Правильна відповідь: trop DE sel (забагато солі)."
+    },
+    {
+      "id": 34,
+      "text": "Dans ces spaghettis, il n'y a pas assez ___ sauce.",
+      "answer_b64": "ZGU=",
+      "hint": "Після PAS ASSEZ [па засе] використовуємо DE [дьо]. Правильна відповідь: pas assez DE sauce (недостатньо соусу)."
+    },
+    {
+      "id": 35,
+      "text": "Dans mon entreprise, il y a trop ___ travail.",
+      "answer_b64": "ZGU=",
+      "hint": "Після TROP [тро] використовуємо DE [дьо]. Правильна відповідь: trop DE travail (забагато роботи)."
+    },
+    {
+      "id": 36,
+      "text": "Dans mon entreprise, il n'y a pas assez ___ vacances.",
+      "answer_b64": "ZGU=",
+      "hint": "Після PAS ASSEZ [па засе] використовуємо DE [дьо], навіть для множини. Правильна відповідь: pas assez DE vacances (недостатньо відпусток)."
+    },
+    {
+      "id": 37,
+      "text": "À la télévision, il y a trop ___ publicité.",
+      "answer_b64": "ZGU=",
+      "hint": "Після TROP [тро] використовуємо DE [дьо]. Правильна відповідь: trop DE publicité (забагато реклами)."
+    },
+    {
+      "id": 38,
+      "text": "Au placard, qu'est-ce qu'il y a? - Il y a ___ sucre.",
+      "answer_b64": "ZHU=",
+      "hint": "Коли ми говоримо про наявність речовини (невизначену кількість), використовуємо партитивний артикль. Sucre - чоловічого роду, тому DU [дю]. Правильна відповідь: Il y a DU sucre (Є цукор)."
+    },
+    {
+      "id": 39,
+      "text": "Au placard, combien de sucre il y a? - Il y a ___ kilo de sucre.",
+      "answer_b64": "dW4=",
+      "hint": "Коли ми відповідаємо на питання COMBIEN (скільки), ми вказуємо конкретну кількість з числівником. Правильна відповідь: Il y a UN kilo de sucre (Є один кілограм цукру)."
+    },
+    {
+      "id": 40,
+      "text": "Qu'est-ce qu'il y a? - Il y a ___ farine.",
+      "answer_b64": "ZGUgbGE=",
+      "hint": "Для невизначеної кількості жіночого роду використовуємо DE LA [дьо ля]. Правильна відповідь: Il y a DE LA farine (Є борошно)."
+    },
+    {
+      "id": 41,
+      "text": "Combien de farine il y a? - Il y a ___ kilo de farine.",
+      "answer_b64": "dW4=",
+      "hint": "На питання про конкретну кількість відповідаємо з числівником. Правильна відповідь: Il y a UN kilo (Є один кілограм)."
+    },
+    {
+      "id": 42,
+      "text": "Qu'est-ce qu'il y a? - Il y a ___ huile.",
+      "answer_b64": "ZGUgbCc=",
+      "hint": "Huile починається з голосної і жіночого роду, тому використовуємо DE L' [дьо ль]. Правильна відповідь: Il y a DE L'huile (Є олія)."
+    },
+    {
+      "id": 43,
+      "text": "Combien d'huile il y a? - Il y a ___ bouteille d'huile.",
+      "answer_b64": "dW5l",
+      "hint": "На питання про конкретну кількість відповідаємо з числівником. Bouteille - жіночого роду, тому UNE. Правильна відповідь: Il y a UNE bouteille (Є одна пляшка)."
+    },
+    {
+      "id": 44,
+      "text": "Il n'y a pas ___ pain.",
+      "answer_b64": "ZGU=",
+      "hint": "У негативній формі партитивний артикль завжди стає DE [дьо]. Правильна відповідь: Il n'y a pas DE pain (Немає хліба)."
+    },
+    {
+      "id": 45,
+      "text": "Il n'y a plus ___ lait.",
+      "answer_b64": "ZGU=",
+      "hint": "Після негації (ne...plus означає 'більше немає') партитивний артикль стає DE [дьо]. Правильна відповідь: Il n'y a plus DE lait (Більше немає молока)."
+    },
+    {
+      "id": 46,
+      "text": "Je voudrais ___ café, s'il vous plaît.",
+      "answer_b64": "ZHU=",
+      "hint": "У ввічливому проханні про невизначену кількість використовуємо партитивний артикль. Café - чоловічого роду, тому DU [дю]. Правильна відповідь: Je voudrais DU café (Я б хотів кави)."
+    },
+    {
+      "id": 47,
+      "text": "Vous prenez ___ sucre dans votre café?",
+      "answer_b64": "ZHU=",
+      "hint": "У питанні про невизначену кількість використовуємо партитивний артикль DU [дю]. Правильна відповідь: Vous prenez DU sucre? (Ви берете цукор?)"
+    },
+    {
+      "id": 48,
+      "text": "Non merci, je ne prends pas ___ sucre.",
+      "answer_b64": "ZGU=",
+      "hint": "У негативній формі партитивний артикль стає DE [дьо]. Правильна відповідь: je ne prends pas DE sucre (я не беру цукру)."
+    },
+    {
+      "id": 49,
+      "text": "Il mange ___ chocolat tous les jours.",
+      "answer_b64": "ZHU=",
+      "hint": "Для невизначеної кількості чоловічого роду використовуємо DU [дю]. Правильна відповідь: Il mange DU chocolat (Він їсть шоколад)."
+    },
+    {
+      "id": 50,
+      "text": "Elle boit ___ eau minérale.",
+      "answer_b64": "ZGUgbCc=",
+      "hint": "Eau починається з голосної, тому використовуємо DE L' [дьо ль]. Правильна відповідь: Elle boit DE L'eau (Вона п'є воду)."
+    },
+    {
+      "id": 51,
+      "text": "Nous achetons ___ fruits au marché.",
+      "answer_b64": "ZGVz",
+      "hint": "Для множини використовуємо DES [дьо]. Правильна відповідь: Nous achetons DES fruits (Ми купуємо фрукти)."
+    },
+    {
+      "id": 52,
+      "text": "Tu veux ___ thé ou ___ café?",
+      "answer_b64": "ZHUsIGR1",
+      "hint": "Обидва слова чоловічого роду, тому використовуємо DU [дю] для обох. Правильна відповідь: DU thé ou DU café (чаю чи кави)."
+    },
+    {
+      "id": 53,
+      "text": "Je n'achète jamais ___ viande.",
+      "answer_b64": "ZGU=",
+      "hint": "Після негації (ne...jamais = ніколи) партитивний артикль стає DE [дьо]. Правильна відповідь: je n'achète jamais DE viande (я ніколи не купую м'яса)."
+    },
+    {
+      "id": 54,
+      "text": "Il y a encore ___ pain?",
+      "answer_b64": "ZHU=",
+      "hint": "У питанні з ENCORE (ще) використовуємо партитивний артикль DU [дю]. Правильна відповідь: Il y a encore DU pain? (Ще є хліб?)"
+    },
+    {
+      "id": 55,
+      "text": "Non, il n'y a plus ___ pain.",
+      "answer_b64": "ZGU=",
+      "hint": "У негативній формі з PLUS (більше не) артикль стає DE [дьо]. Правильна відповідь: il n'y a plus DE pain (більше немає хліба)."
+    },
+    {
+      "id": 56,
+      "text": "Elle fait ___ sport tous les jours.",
+      "answer_b64": "ZHU=",
+      "hint": "Sport - чоловічого роду, використовуємо DU [дю]. Правильна відповідь: Elle fait DU sport (Вона займається спортом). Зверніть увагу: faire du sport - усталений вираз."
+    },
+    {
+      "id": 57,
+      "text": "Ils font ___ musique ensemble.",
+      "answer_b64": "ZGUgbGE=",
+      "hint": "Musique - жіночого роду, використовуємо DE LA [дьо ля]. Правильна відповідь: Ils font DE LA musique (Вони грають музику). Faire de la musique - усталений вираз."
+    },
+    {
+      "id": 58,
+      "text": "J'ai acheté beaucoup ___ légumes.",
+      "answer_b64": "ZGU=",
+      "hint": "Після BEAUCOUP [боку] завжди використовуємо DE [дьо]. Правильна відповідь: beaucoup DE légumes (багато овочів)."
+    },
+    {
+      "id": 59,
+      "text": "Il boit trop ___ café.",
+      "answer_b64": "ZGU=",
+      "hint": "Після TROP [тро] завжди використовуємо DE [дьо]. Правильна відповідь: trop DE café (забагато кави)."
+    },
+    {
+      "id": 60,
+      "text": "Tu as assez ___ argent?",
+      "answer_b64": "ZCc=",
+      "hint": "Після ASSEZ [асе] використовуємо DE [дьо]. Argent починається з голосної, тому D' [д]. Правильна відповідь: assez D'argent (досить грошей)."
+    },
+    {
+      "id": 61,
+      "text": "Nous avons un peu ___ temps.",
+      "answer_b64": "ZGU=",
+      "hint": "Після UN PEU [ен пе] використовуємо DE [дьо]. Правильна відповідь: un peu DE temps (трохи часу)."
+    },
+    {
+      "id": 62,
+      "text": "Elle mange peu ___ viande.",
+      "answer_b64": "ZGU=",
+      "hint": "Після PEU [пе] (мало) використовуємо DE [дьо]. Правильна відповідь: peu DE viande (мало м'яса)."
+    },
+    {
+      "id": 63,
+      "text": "Combien ___ sucre voulez-vous?",
+      "answer_b64": "ZGU=",
+      "hint": "У питаннях з COMBIEN [комб'єн] (скільки) використовуємо DE [дьо]. Правильна відповідь: Combien DE sucre? (Скільки цукру?)"
+    },
+    {
+      "id": 64,
+      "text": "Il reste encore un peu ___ pain.",
+      "answer_b64": "ZGU=",
+      "hint": "Після UN PEU [ен пе] використовуємо DE [дьо]. Правильна відповідь: un peu DE pain (трохи хліба)."
+    }
+  ]
+}

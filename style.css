@@ -1,0 +1,29 @@
+      .logo {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+      }
+
+      .logo svg {
+          width: 48px;
+          height: 48px;
+      }
+
+      .section-card {
+          cursor: pointer;
+      }
+
+      .hidden {
+          display: none !important;
+      }
+
+      .answer-badge {
+          right: 10px;
+          top: 50%;
+          transform: translateY(-50%);
+          pointer-events: none;
+          z-index: 5;
+          min-width: 24px;
+          /* Ensure badge has minimum width */
+          text-align: center;
+      }
