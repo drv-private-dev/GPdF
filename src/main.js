@@ -3,7 +3,7 @@ import DataService from "./data/DataService.js";
 const COURSE_TITLE = "Grammaire progressive du Français"; // change here to update title
 
 // ===== VERSION =====
-const APP_VERSION = "1.0.006"; // <-- меняй здесь номер версии
+const APP_VERSION = "1.0.007"; // <-- меняй здесь номер версии
 // ====================
 
 async function loadJSON(url) {
