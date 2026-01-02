@@ -1,4 +1,5 @@
 // main.js - loads sections.json and section files dynamically
+import DataService from "./data/DataService.js";
 const COURSE_TITLE = "Grammaire progressive du Français"; // change here to update title
 
 // ===== VERSION =====
@@ -6,9 +7,9 @@ const APP_VERSION = "1.0.006"; // <-- меняй здесь номер верс�
 // ====================
 
 async function loadJSON(url) {
-  const res = await fetch(url);
-  if (!res.ok) throw new Error("Failed to load " + url);
-  return res.json();
+  // Kept for backward compatibility with existing code.
+  // Fetch + caching now lives in DataService.
+  return DataService.loadJSON(url);
 }
 
 function setCourseTitle(title) {
@@ -315,7 +316,7 @@ export function checkAnswer(
 // INIT
 document.addEventListener("DOMContentLoaded", async () => {
   try {
-    const sectionsData = await loadJSON("./data/sections.json");
+    const sectionsData = await DataService.getSectionsList();
     setCourseTitle(sectionsData.courseTitle || COURSE_TITLE);
     const sel = document.getElementById("sectionSelector");
     const grid = document.getElementById("sectionsGrid");
@@ -330,7 +331,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     sel.addEventListener("change", (e) => {
       const file = e.target.value;
-      if (file) loadJSON(file).then((d) => showQuiz(d));
+      if (file) DataService.getSectionFile(file).then((d) => showQuiz(d));
     });
 
     // delegate open buttons in section cards
@@ -338,7 +339,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       const btn = e.target.closest(".select-btn");
       if (btn) {
         const file = btn.getAttribute("data-file");
-        if (file) loadJSON(file).then((d) => showQuiz(d));
+        if (file) DataService.getSectionFile(file).then((d) => showQuiz(d));
       }
     });
 
