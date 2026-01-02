@@ -1,0 +1,389 @@
+{
+  "title": "Je pars, vous partes ...",
+  "questions": [
+    {
+      "id": 1,
+      "text": "Conjuguez le verbe « partir » : je ___ .",
+      "answer": "pars",
+      "hint": "Згадайте теперішній час дієслова «partir». Наприклад: je pars."
+    },
+    {
+      "id": 2,
+      "text": "Conjuguez le verbe « partir » : tu ___ .",
+      "answer": "pars",
+      "hint": "Згадайте теперішній час дієслова «partir». Наприклад: tu pars."
+    },
+    {
+      "id": 3,
+      "text": "Conjuguez le verbe « partir » : il ___ .",
+      "answer": "part",
+      "hint": "Згадайте теперішній час дієслова «partir». Наприклад: il part."
+    },
+    {
+      "id": 4,
+      "text": "Conjuguez le verbe « partir » : nous ___ .",
+      "answer": "partons",
+      "hint": "Згадайте теперішній час дієслова «partir». Наприклад: nous partons."
+    },
+    {
+      "id": 5,
+      "text": "Conjuguez le verbe « partir » : vous ___ .",
+      "answer": "partez",
+      "hint": "Згадайте теперішній час дієслова «partir». Наприклад: vous partez."
+    },
+    {
+      "id": 6,
+      "text": "Conjuguez le verbe « partir » : ils ___ .",
+      "answer": "partent",
+      "hint": "Згадайте теперішній час дієслова «partir». Наприклад: ils partent."
+    },
+    {
+      "id": 7,
+      "text": "Conjuguez le verbe « dormir » : je ___ .",
+      "answer": "dors",
+      "hint": "Згадайте теперішній час дієслова «dormir». Наприклад: je dors."
+    },
+    {
+      "id": 8,
+      "text": "Conjuguez le verbe « dormir » : tu ___ .",
+      "answer": "dors",
+      "hint": "Згадайте теперішній час дієслова «dormir». Наприклад: tu dors."
+    },
+    {
+      "id": 9,
+      "text": "Conjuguez le verbe « dormir » : il ___ .",
+      "answer": "dort",
+      "hint": "Згадайте теперішній час дієслова «dormir». Наприклад: il dort."
+    },
+    {
+      "id": 10,
+      "text": "Conjuguez le verbe « dormir » : nous ___ .",
+      "answer": "dormons",
+      "hint": "Згадайте теперішній час дієслова «dormir». Наприклад: nous dormons."
+    },
+    {
+      "id": 11,
+      "text": "Conjuguez le verbe « dormir » : vous ___ .",
+      "answer": "dormez",
+      "hint": "Згадайте теперішній час дієслова «dormir». Наприклад: vous dormez."
+    },
+    {
+      "id": 12,
+      "text": "Conjuguez le verbe « dormir » : ils ___ .",
+      "answer": "dorment",
+      "hint": "Згадайте теперішній час дієслова «dormir». Наприклад: ils dorment."
+    },
+    {
+      "id": 13,
+      "text": "Conjuguez le verbe « servir » : je ___ .",
+      "answer": "sers",
+      "hint": "Згадайте теперішній час дієслова «servir». Наприклад: je sers."
+    },
+    {
+      "id": 14,
+      "text": "Conjuguez le verbe « servir » : tu ___ .",
+      "answer": "sers",
+      "hint": "Згадайте теперішній час дієслова «servir». Наприклад: tu sers."
+    },
+    {
+      "id": 15,
+      "text": "Conjuguez le verbe « servir » : il ___ .",
+      "answer": "sert",
+      "hint": "Згадайте теперішній час дієслова «servir». Наприклад: il sert."
+    },
+    {
+      "id": 16,
+      "text": "Conjuguez le verbe « servir » : nous ___ .",
+      "answer": "servons",
+      "hint": "Згадайте теперішній час дієслова «servir». Наприклад: nous servons."
+    },
+    {
+      "id": 17,
+      "text": "Conjuguez le verbe « servir » : vous ___ .",
+      "answer": "servez",
+      "hint": "Згадайте теперішній час дієслова «servir». Наприклад: vous servez."
+    },
+    {
+      "id": 18,
+      "text": "Conjuguez le verbe « servir » : ils ___ .",
+      "answer": "servent",
+      "hint": "Згадайте теперішній час дієслова «servir». Наприклад: ils servent."
+    },
+    {
+      "id": 19,
+      "text": "Conjuguez le verbe « vivre » : je ___ .",
+      "answer": "vis",
+      "hint": "Згадайте теперішній час дієслова «vivre». Наприклад: je vis."
+    },
+    {
+      "id": 20,
+      "text": "Conjuguez le verbe « vivre » : tu ___ .",
+      "answer": "vis",
+      "hint": "Згадайте теперішній час дієслова «vivre». Наприклад: tu vis."
+    },
+    {
+      "id": 21,
+      "text": "Conjuguez le verbe « vivre » : il ___ .",
+      "answer": "vit",
+      "hint": "Згадайте теперішній час дієслова «vivre». Наприклад: il vit."
+    },
+    {
+      "id": 22,
+      "text": "Conjuguez le verbe « vivre » : nous ___ .",
+      "answer": "vivons",
+      "hint": "Згадайте теперішній час дієслова «vivre». Наприклад: nous vivons."
+    },
+    {
+      "id": 23,
+      "text": "Conjuguez le verbe « vivre » : vous ___ .",
+      "answer": "vivez",
+      "hint": "Згадайте теперішній час дієслова «vivre». Наприклад: vous vivez."
+    },
+    {
+      "id": 24,
+      "text": "Conjuguez le verbe « vivre » : ils ___ .",
+      "answer": "vivent",
+      "hint": "Згадайте теперішній час дієслова «vivre». Наприклад: ils vivent."
+    },
+    {
+      "id": 25,
+      "text": "Conjuguez le verbe « suivre » : je ___ .",
+      "answer": "suis",
+      "hint": "Згадайте теперішній час дієслова «suivre». Наприклад: je suis."
+    },
+    {
+      "id": 26,
+      "text": "Conjuguez le verbe « suivre » : tu ___ .",
+      "answer": "suis",
+      "hint": "Згадайте теперішній час дієслова «suivre». Наприклад: tu suis."
+    },
+    {
+      "id": 27,
+      "text": "Conjuguez le verbe « suivre » : il ___ .",
+      "answer": "suit",
+      "hint": "Згадайте теперішній час дієслова «suivre». Наприклад: il suit."
+    },
+    {
+      "id": 28,
+      "text": "Conjuguez le verbe « suivre » : nous ___ .",
+      "answer": "suivons",
+      "hint": "Згадайте теперішній час дієслова «suivre». Наприклад: nous suivons."
+    },
+    {
+      "id": 29,
+      "text": "Conjuguez le verbe « suivre » : vous ___ .",
+      "answer": "suivez",
+      "hint": "Згадайте теперішній час дієслова «suivre». Наприклад: vous suivez."
+    },
+    {
+      "id": 30,
+      "text": "Conjuguez le verbe « suivre » : ils ___ .",
+      "answer": "suivent",
+      "hint": "Згадайте теперішній час дієслова «suivre». Наприклад: ils suivent."
+    },
+    {
+      "id": 31,
+      "text": "Nous ___ demain matin.",
+      "answer": "partons",
+      "hint": "Вставте правильну форму дієслова «partir». Напр.: nous partons."
+    },
+    {
+      "id": 32,
+      "text": "Vous ___ tôt ce soir ?",
+      "answer": "dormez",
+      "hint": "Вставте правильну форму дієслова «dormir». Напр.: vous dormez."
+    },
+    {
+      "id": 33,
+      "text": "Il ___ le café.",
+      "answer": "sert",
+      "hint": "Вставте правильну форму дієслова «servir». Напр.: il sert."
+    },
+    {
+      "id": 34,
+      "text": "Tu ___ à Paris.",
+      "answer": "vis",
+      "hint": "Вставте правильну форму дієслова «vivre». Напр.: tu vis."
+    },
+    {
+      "id": 35,
+      "text": "Je ___ le cours.",
+      "answer": "suis",
+      "hint": "Вставте правильну форму дієслова «suivre». Напр.: je suis."
+    },
+    {
+      "id": 36,
+      "text": "Ils ___ du cinéma.",
+      "answer": "sortent",
+      "hint": "Вставте правильну форму дієслова «sortir». Напр.: ils sortent."
+    },
+    {
+      "id": 37,
+      "text": "Je ___ une bonne odeur.",
+      "answer": "sens",
+      "hint": "Вставте правильну форму дієслова «sentir». Напр.: je sens."
+    },
+    {
+      "id": 38,
+      "text": "Je ne ___ pas.",
+      "answer": "pars",
+      "hint": "Побудуйте заперечення. У теперішньому часі форма дієслова не змінюється: je pars → форма лишається pars."
+    },
+    {
+      "id": 39,
+      "text": "Il ne ___ pas.",
+      "answer": "dort",
+      "hint": "Побудуйте заперечення. У теперішньому часі форма дієслова не змінюється: il dort → форма лишається dort."
+    },
+    {
+      "id": 40,
+      "text": "Nous ne ___ pas.",
+      "answer": "servons",
+      "hint": "Побудуйте заперечення. У теперішньому часі форма дієслова не змінюється: nous servons → форма лишається servons."
+    },
+    {
+      "id": 41,
+      "text": "Tu ne ___ pas.",
+      "answer": "vis",
+      "hint": "Побудуйте заперечення. У теперішньому часі форма дієслова не змінюється: tu vis → форма лишається vis."
+    },
+    {
+      "id": 42,
+      "text": "Vous ne ___ pas.",
+      "answer": "suivez",
+      "hint": "Побудуйте заперечення. У теперішньому часі форма дієслова не змінюється: vous suivez → форма лишається suivez."
+    },
+    {
+      "id": 43,
+      "text": "Je ___ (pars / parte).",
+      "answer": "pars",
+      "hint": "Порада: оберіть правильну форму дієслова згідно з особою."
+    },
+    {
+      "id": 44,
+      "text": "Vous ___ (dormez / dormons).",
+      "answer": "dormez",
+      "hint": "Порада: оберіть правильну форму дієслова згідно з особою."
+    },
+    {
+      "id": 45,
+      "text": "Ils ___ (servent / servons).",
+      "answer": "servent",
+      "hint": "Порада: оберіть правильну форму дієслова згідно з особою."
+    },
+    {
+      "id": 46,
+      "text": "Tu ___ (suis / suit) le professeur.",
+      "answer": "suis",
+      "hint": "Порада: оберіть правильну форму дієслова згідно з особою."
+    },
+    {
+      "id": 47,
+      "text": "Nous ___ (sortons / sortes).",
+      "answer": "sortons",
+      "hint": "Порада: оберіть правильну форму дієслова згідно з особою."
+    },
+    {
+      "id": 48,
+      "text": "Il ___ (vit / vis) ici.",
+      "answer": "vit",
+      "hint": "Порада: оберіть правильну форму дієслова згідно з особою."
+    },
+    {
+      "id": 49,
+      "text": "Je ___ (sens / senss) le parfum.",
+      "answer": "sens",
+      "hint": "Порада: оберіть правильну форму дієслова згідно з особою."
+    },
+    {
+      "id": 50,
+      "text": "Il ___ (dort / dors) beaucoup.",
+      "answer": "dort",
+      "hint": "Порада: оберіть правильну форму дієслова згідно з особою."
+    },
+    {
+      "id": 51,
+      "text": "Vous ___ (partez / partes) maintenant.",
+      "answer": "partez",
+      "hint": "Порада: оберіть правильну форму дієслова згідно з особою."
+    },
+    {
+      "id": 52,
+      "text": "Nous ___ (vivons / vivez) ensemble.",
+      "answer": "vivons",
+      "hint": "Порада: оберіть правильну форму дієслова згідно з особою."
+    },
+    {
+      "id": 53,
+      "text": "Transformez: partons → je ___.",
+      "answer": "pars",
+      "hint": "Підкажемо: змініть особу з «nous» на «je»."
+    },
+    {
+      "id": 54,
+      "text": "Transformez: partons → je ___.",
+      "answer": "pars",
+      "hint": "Підкажемо: змініть особу з «nous» на «je»."
+    },
+    {
+      "id": 55,
+      "text": "Transformez: partons → je ___.",
+      "answer": "pars",
+      "hint": "Підкажемо: змініть особу з «nous» на «je»."
+    },
+    {
+      "id": 56,
+      "text": "Transformez: partons → je ___.",
+      "answer": "pars",
+      "hint": "Підкажемо: змініть особу з «nous» на «je»."
+    },
+    {
+      "id": 57,
+      "text": "Transformez: partons → je ___.",
+      "answer": "pars",
+      "hint": "Підкажемо: змініть особу з «nous» на «je»."
+    },
+    {
+      "id": 58,
+      "text": "Transformez: partons → je ___.",
+      "answer": "pars",
+      "hint": "Підкажемо: змініть особу з «nous» на «je»."
+    },
+    {
+      "id": 59,
+      "text": "Transformez: partons → je ___.",
+      "answer": "pars",
+      "hint": "Підкажемо: змініть особу з «nous» на «je»."
+    },
+    {
+      "id": 60,
+      "text": "Transformez: partons → je ___.",
+      "answer": "pars",
+      "hint": "Підкажемо: змініть особу з «nous» на «je»."
+    },
+    {
+      "id": 61,
+      "text": "Transformez: partons → je ___.",
+      "answer": "pars",
+      "hint": "Підкажемо: змініть особу з «nous» на «je»."
+    },
+    {
+      "id": 62,
+      "text": "Transformez: partons → je ___.",
+      "answer": "pars",
+      "hint": "Підкажемо: змініть особу з «nous» на «je»."
+    },
+    {
+      "id": 63,
+      "text": "Transformez: partons → je ___.",
+      "answer": "pars",
+      "hint": "Підкажемо: змініть особу з «nous» на «je»."
+    },
+    {
+      "id": 64,
+      "text": "Transformez: partons → je ___.",
+      "answer": "pars",
+      "hint": "Підкажемо: змініть особу з «nous» на «je»."
+    }
+  ]
+}

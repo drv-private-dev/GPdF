@@ -2,7 +2,7 @@
 const COURSE_TITLE = "Grammaire progressive du Français"; // change here to update title
 
 // ===== VERSION =====
-const APP_VERSION = "1.0.005"; // <-- меняй здесь номер версии
+const APP_VERSION = "1.0.006"; // <-- меняй здесь номер версии
 // ====================
 
 async function loadJSON(url) {
@@ -58,7 +58,7 @@ function createQuestionElement(q) {
   const hintBtn = document.createElement("button");
   hintBtn.className = "btn btn-sm btn-outline-info";
   hintBtn.type = "button";
-  hintBtn.innerHTML = '<i class="bi bi-info-circle"></i> Подсказка';
+  hintBtn.innerHTML = '<i class="bi bi-info-circle"></i> Підказка';
 
   // Добавляем элементы в шапку
   header.append(h2, hintBtn);
@@ -124,13 +124,6 @@ function createQuestionElement(q) {
     hintBox.style.display = hintBox.style.display === "none" ? "block" : "none";
   });
 
-  // input.addEventListener("input", () => {
-  //   input.classList.remove("is-valid", "is-invalid");
-  //   const b = document.getElementById(`badge_${q.id}`);
-  //   b.style.display = "none";
-  //   updateProgress();
-  // });
-
   // === ОБРАБОТЧИК: Проверка ответа ===
   checkBtn.addEventListener("click", () => {
     const userInput = input.value;
@@ -141,29 +134,18 @@ function createQuestionElement(q) {
 
     if (result) {
       // === ПРАВИЛЬНЫЙ ОТВЕТ ===
-      // resultText.textContent = "ВІРНО!";
-      // resultText.style.color = "green";
       // Добавляем зеленую обводку к input
       input.classList.add("is-valid");
       input.classList.remove("is-invalid");
-      // // Показываем зеленый бейдж с галочкой
-      // badge.textContent = "ТАК";
-      // badge.className = "badge bg-success position-absolute answer-badge";
-      // badge.style.display = "inline-block";
     } else {
       // === НЕПРАВИЛЬНЫЙ ОТВЕТ ===
-      // resultText.textContent = "ПОМИЛКА!";
-      // resultText.style.color = "red";
       // Добавляем красную обводку к input
       input.classList.add("is-invalid");
       input.classList.remove("is-valid");
-      // // Показываем красный бейдж с крестиком
-      // badge.textContent = "НІ";
-      // badge.className = "badge bg-danger position-absolute answer-badge";
-      // badge.style.display = "inline-block";
     }
 
     updateProgress();
+    updateCorrectCountFromInputs();
   });
 
   // Собираем все элементы в секцию
@@ -285,18 +267,25 @@ function updateProgress() {
   }
 }
 
-// новый счётчик правильных ответов (визуальный)
-function updateCorrectCount(correct, total) {
-  let el = document.getElementById("correctAnswersInfo");
-  if (!el) {
-    el = document.createElement("div");
-    el.id = "correctAnswersInfo";
-    el.className = "fw-bold mt-1";
-    document.querySelector(".my-3").appendChild(el);
-  }
-  el.textContent = `Правильних: ${correct} з ${total}`;
+function updateCorrectCountFromInputs() {
+  const inputs = Array.from(
+    document.querySelectorAll("#questionsContainer input")
+  );
+  const correctCount = inputs.filter((i) =>
+    i.classList.contains("is-valid")
+  ).length;
+  const total = inputs.length;
+
+  updateCorrectCount(correctCount, total);
 }
 
+// новый счётчик правильных ответов (визуальный)
+function updateCorrectCount(correct, total) {
+  const el = document.getElementById("correctAnswersInfo");
+  if (el) {
+    el.textContent = `Правильних: ${correct} з ${total}`;
+  }
+}
 /**
  * Проверка ответа (строгое сравнение).
  * @param {string} expected
