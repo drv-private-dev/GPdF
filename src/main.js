@@ -1,5 +1,6 @@
 // main.js - loads sections.json and section files dynamically
 import DataService from "./data/DataService.js";
+import Router from "./core/router/Router.js";
 const COURSE_TITLE = "Grammaire progressive du Français"; // change here to update title
 
 // ===== VERSION =====
@@ -28,7 +29,7 @@ function renderSectionCard(s) {
     <div class="card-body">
       <h5 class="card-title">${s.title}</h5>
       <p class="card-text">Відкрийте розділ та потренуйтеся.</p>
-      <button class="btn btn-sm btn-outline-primary select-btn" data-file="${s.file}">Відкрити</button>
+      <button class="btn btn-sm btn-outline-primary select-btn" data-file="${s.file}" data-id="${s.id}">Відкрити</button>
     </div>
   `;
   col.appendChild(card);
@@ -162,7 +163,8 @@ function decodeBase64(s) {
   }
 }
 
-function showQuiz(data) {
+function showQuiz(data, opts = {}) {
+  const onBack = opts && typeof opts.onBack === "function" ? opts.onBack : null;
   document.getElementById("landing").classList.add("hidden");
   document.getElementById("quizArea").classList.remove("hidden");
   document.getElementById("sectionTitle").textContent = data.title || "";
@@ -189,6 +191,10 @@ function showQuiz(data) {
     updateCorrectCount(0, data.questions.length);
   };
   document.getElementById("backBtn").onclick = () => {
+    if (onBack) {
+      onBack();
+      return;
+    }
     document.getElementById("quizArea").classList.add("hidden");
     document.getElementById("landing").classList.remove("hidden");
     document.getElementById("result").innerHTML = "";
@@ -321,29 +327,62 @@ document.addEventListener("DOMContentLoaded", async () => {
     const sel = document.getElementById("sectionSelector");
     const grid = document.getElementById("sectionsGrid");
 
+    const sectionsById = new Map(
+      (sectionsData.sections || []).map((s) => [s.id, s])
+    );
+
     sectionsData.sections.forEach((s) => {
       const opt = document.createElement("option");
-      opt.value = s.file;
+      opt.value = s.id;
       opt.textContent = s.title;
       sel.appendChild(opt);
       grid.appendChild(renderSectionCard(s));
     });
 
+    const renderLanding = () => {
+      document.getElementById("quizArea").classList.add("hidden");
+      document.getElementById("landing").classList.remove("hidden");
+      document.getElementById("result").innerHTML = "";
+      // keep selector in sync with the current route
+      if (sel) sel.value = "";
+    };
+
+    const renderSection = async (sectionId) => {
+      const s = sectionsById.get(sectionId);
+      if (!s) {
+        router.replace("/");
+        return;
+      }
+      if (sel) sel.value = s.id;
+      const data = await DataService.getSectionFile(s.file);
+      showQuiz(data, { onBack: () => router.navigate("/") });
+    };
+
+    const router = new Router({
+      defaultPath: "/",
+      routes: [
+        { pattern: /^\/$/, handler: renderLanding },
+        { pattern: /^\/section\/([^\/]+)$/, handler: renderSection },
+      ],
+    });
+    router.start();
+
     sel.addEventListener("change", (e) => {
-      const file = e.target.value;
-      if (file) DataService.getSectionFile(file).then((d) => showQuiz(d));
+      const id = e.target.value;
+      if (!id) router.navigate("/");
+      else router.navigate(`/section/${id}`);
     });
 
     // delegate open buttons in section cards
     grid.addEventListener("click", (e) => {
       const btn = e.target.closest(".select-btn");
       if (btn) {
-        const file = btn.getAttribute("data-file");
-        if (file) DataService.getSectionFile(file).then((d) => showQuiz(d));
+        const id = btn.getAttribute("data-id");
+        if (id) router.navigate(`/section/${id}`);
       }
     });
 
-    // ===== VERSION IN FOOTER =====
+// ===== VERSION IN FOOTER =====
     document.getElementById("appVersion").textContent = "v" + APP_VERSION;
     // =============================
   } catch (err) {
