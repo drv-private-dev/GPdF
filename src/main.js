@@ -1,20 +1,69 @@
 // main.js - loads sections.json and section files dynamically
 import DataService from "./data/DataService.js";
 import Router from "./core/router/Router.js";
-import { initI18n, t } from "./core/i18n/i18n.js";
+import { initI18n, t, getLang, setLang } from "./core/i18n/i18n.js";
 const COURSE_TITLE = "Grammaire progressive du Français"; // change here to update title
 
 // ===== VERSION =====
-const APP_VERSION = "1.0.008"; // <-- меняй здесь номер версии
+const APP_VERSION = "1.0.007"; // <-- меняй здесь номер версии
 // ====================
 
 initI18n();
+setupLangSelector();
+applyStaticUiTranslations();
 
 async function loadJSON(url) {
   // Kept for backward compatibility with existing code.
   // Fetch + caching now lives in DataService.
   return DataService.loadJSON(url);
 }
+
+
+function setupLangSelector() {
+  const sel = document.getElementById("langSelector");
+  if (!sel) return;
+
+  // Set current language in the selector
+  sel.value = getLang();
+
+  sel.addEventListener("change", () => {
+    const next = sel.value;
+    setLang(next);
+    // Simplest & safest: reload so all UI strings re-render with the new language.
+    window.location.reload();
+  });
+}
+
+function applyStaticUiTranslations() {
+  // Header subtitle
+  const subtitle = document.getElementById("subtitleText");
+  if (subtitle) subtitle.textContent = t("Subtitle");
+
+  // Language selector label (visually hidden) + aria-label
+  const langLabel = document.getElementById("langLabel");
+  if (langLabel) langLabel.textContent = t("Language");
+  const langSel = document.getElementById("langSelector");
+  if (langSel) langSel.setAttribute("aria-label", t("Language"));
+
+  // Section selector label + placeholder option
+  const sectionLabel = document.getElementById("sectionLabel");
+  if (sectionLabel) sectionLabel.textContent = t("SelectSection");
+  const placeholder = document.getElementById("sectionPlaceholder");
+  if (placeholder) placeholder.textContent = t("SelectSectionPlaceholder");
+
+  // Footer brand
+  const footer = document.getElementById("footerBrand");
+  if (footer) footer.textContent = t("FooterBrand");
+
+  // Main buttons
+  const checkAllBtn = document.getElementById("checkBtn");
+  if (checkAllBtn) checkAllBtn.textContent = t("CheckAll");
+  const resetBtn = document.getElementById("resetBtn");
+  if (resetBtn) resetBtn.textContent = t("Reset");
+  const backBtn = document.getElementById("backBtn");
+  if (backBtn) backBtn.textContent = t("BackToSections");
+}
+
 
 function setCourseTitle(title) {
   const el = document.getElementById("courseTitle");
@@ -31,8 +80,8 @@ function renderSectionCard(s) {
   card.innerHTML = `
     <div class="card-body">
       <h5 class="card-title">${s.title}</h5>
-      <p class="card-text">Відкрийте розділ та потренуйтеся.</p>
-      <button class="btn btn-sm btn-outline-primary select-btn" data-file="${s.file}" data-id="${s.id}">Відкрити</button>
+      <p class="card-text">${t("OpenSectionDesc")}</p>
+      <button class="btn btn-sm btn-outline-primary select-btn" data-file="${s.file}" data-id="${s.id}">${t("Open")}</button>
     </div>
   `;
   col.appendChild(card);
@@ -57,7 +106,7 @@ function createQuestionElement(q) {
 
   // Заголовок с номером вопроса
   const h2 = document.createElement("h2");
-  h2.textContent = `Питання ${q.id}`;
+  h2.textContent = t("QuestionTitle", { id: q.id });
 
   // Кнопка для показа подсказки
   const hintBtn = document.createElement("button");
@@ -272,7 +321,7 @@ function updateProgress() {
   const pct = total === 0 ? 0 : Math.round((filled / total) * 100);
 
   const progressText = document.getElementById("progressText");
-  if (progressText) progressText.textContent = `Виконано ${filled} з ${total}`;
+  if (progressText) progressText.textContent = t("ProgressDoneOfTotal", { filled, total });
 
   const bar = document.getElementById("progressBar");
   if (bar) {
@@ -298,7 +347,7 @@ function updateCorrectCountFromInputs() {
 function updateCorrectCount(correct, total) {
   const el = document.getElementById("correctAnswersInfo");
   if (el) {
-    el.textContent = `Правильних: ${correct} з ${total}`;
+    el.textContent = t("CorrectOfTotal", { correct, total });
   }
 }
 /**
@@ -395,6 +444,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     // =============================
   } catch (err) {
     console.error(err);
-    alert("Помилка під час завантаження списку розділів: " + err.message);
+    alert(t("LoadSectionsError", { message: err.message }));
   }
 });

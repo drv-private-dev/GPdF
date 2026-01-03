@@ -40,10 +40,17 @@ export function setLang(lang) {
  * Translate UI key.
  * If key is missing, returns the key itself (so the UI never breaks).
  */
-export function t(key) {
+export function t(key, vars = null) {
   const k = String(key || "");
-  const dict = DICTS[currentLang] || DICTS.uk;
-  return (dict && Object.prototype.hasOwnProperty.call(dict, k)) ? dict[k] : k;
+  const dict = DICTS[currentLang] || DICTS.uk || {};
+  const raw = Object.prototype.hasOwnProperty.call(dict, k) ? dict[k] : k;
+  if (!vars || typeof raw !== "string") return raw;
+
+  // Simple templating: "Done {filled} of {total}"
+  return raw.replace(/\{(\w+)\}/g, (_, name) => {
+    const v = vars[name];
+    return v === undefined || v === null ? "" : String(v);
+  });
 }
 
 function safeGetLocalStorage(k) {

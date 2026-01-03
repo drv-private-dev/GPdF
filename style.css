@@ -27,3 +27,8 @@
           /* Ensure badge has minimum width */
           text-align: center;
       }
+
+/* Language selector (UI only) */
+#langSelector {
+  min-width: 9rem;
+}

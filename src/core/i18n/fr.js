@@ -1,4 +1,4 @@
-// src/core/i18n/fr.js
+// core/i18n/fr.js
 export default {
   Check: "Vérifier",
   Hint: "Indice",
@@ -7,4 +7,18 @@ export default {
   Expected: "Attendu",
   Home: "Accueil",
   Back: "Retour",
+  SelectSection: "Choisir une section",
+  SelectSectionPlaceholder: "-- Choisir une section --",
+  CheckAll: "Vérifier les réponses",
+  Reset: "Réinitialiser",
+  BackToSections: "Retour aux sections",
+  ProgressDoneOfTotal: "Fait {filled} sur {total}",
+  CorrectOfTotal: "Correct : {correct} sur {total}",
+  QuestionTitle: "Question {id}",
+  OpenSectionDesc: "Ouvrez une section et entraînez-vous.",
+  Open: "Ouvrir",
+  Language: "Langue",
+  Subtitle: "Exercices interactifs — titre modifiable via main.js",
+  FooterBrand: "© Learning Platform DRV",
+  LoadSectionsError: "Erreur lors du chargement de la liste des sections : {message}",
 };

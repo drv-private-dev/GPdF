@@ -1,4 +1,4 @@
-// src/core/i18n/uk.js
+// core/i18n/uk.js
 export default {
   Check: "Перевірити",
   Hint: "Підказка",
@@ -7,4 +7,18 @@ export default {
   Expected: "Очікувалося",
   Home: "Головна",
   Back: "Назад",
+  SelectSection: "Виберіть розділ",
+  SelectSectionPlaceholder: "-- Виберіть розділ --",
+  CheckAll: "Перевірити відповіді",
+  Reset: "Скинути",
+  BackToSections: "Назад до розділів",
+  ProgressDoneOfTotal: "Виконано {filled} з {total}",
+  CorrectOfTotal: "Правильних: {correct} з {total}",
+  QuestionTitle: "Питання {id}",
+  OpenSectionDesc: "Відкрийте розділ та потренуйтеся.",
+  Open: "Відкрити",
+  Language: "Мова",
+  Subtitle: "Інтерактивна практика — назву можна змінити в main.js",
+  FooterBrand: "© Learning Platform DRV",
+  LoadSectionsError: "Помилка під час завантаження списку розділів: {message}",
 };

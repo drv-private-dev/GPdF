@@ -44,19 +44,26 @@
             <h1 id="courseTitle" class="h4 mb-0">
               Grammaire progressive du Français
             </h1>
-            <div class="text-muted small">
+            <div id="subtitleText" class="text-muted small">
               Interactive practice — editable title via main.js
             </div>
           </div>
         </div>
-        <div>
-          <label for="sectionSelector" class="form-label mb-0"
-            >Виберіть розділ</label
-          >
+        <div class="d-flex gap-3 align-items-end">
+          <div>
+            <label id="sectionLabel" for="sectionSelector" class="form-label mb-0">Виберіть розділ</label>
           <select id="sectionSelector" class="form-select">
-            <option value="">-- Виберіть розділ --</option>
+            <option id="sectionPlaceholder" value="">-- Виберіть розділ --</option>
           </select>
         </div>
+          <div>
+            <label id="langLabel" for="langSelector" class="form-label mb-0 visually-hidden">Language</label>
+            <select id="langSelector" class="form-select form-select-sm" aria-label="Language">
+              <option value="uk">Українська</option>
+              <option value="fr">Français</option>
+              <option value="en">English</option>
+            </select>
+          </div>
       </div>
     </header>
 
@@ -100,7 +107,7 @@
     <footer
       class="container py-4 text-muted small d-flex justify-content-between"
     >
-      <span>© Learning Platform DRV</span>
+      <span id="footerBrand">© Learning Platform DRV</span>
       <span id="appVersion"></span>
     </footer>
     <script type="module" src="./src/main.js"></script>
