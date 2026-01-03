@@ -1,11 +1,14 @@
 // main.js - loads sections.json and section files dynamically
 import DataService from "./data/DataService.js";
 import Router from "./core/router/Router.js";
+import { initI18n, t } from "./core/i18n/i18n.js";
 const COURSE_TITLE = "Grammaire progressive du Français"; // change here to update title
 
 // ===== VERSION =====
-const APP_VERSION = "1.0.007"; // <-- меняй здесь номер версии
+const APP_VERSION = "1.0.008"; // <-- меняй здесь номер версии
 // ====================
+
+initI18n();
 
 async function loadJSON(url) {
   // Kept for backward compatibility with existing code.
@@ -60,7 +63,7 @@ function createQuestionElement(q) {
   const hintBtn = document.createElement("button");
   hintBtn.className = "btn btn-sm btn-outline-info";
   hintBtn.type = "button";
-  hintBtn.innerHTML = '<i class="bi bi-info-circle"></i> Підказка';
+  hintBtn.innerHTML = `<i class="bi bi-info-circle"></i> ${t("Hint")}`;
 
   // Добавляем элементы в шапку
   header.append(h2, hintBtn);
@@ -107,7 +110,7 @@ function createQuestionElement(q) {
   const checkBtn = document.createElement("button");
   checkBtn.type = "button";
   checkBtn.className = "btn btn-sm btn-primary mt-2";
-  checkBtn.textContent = "Check";
+  checkBtn.textContent = t("Check");
 
   inputWrapper.appendChild(checkBtn);
   inputWrapper.appendChild(badge);
@@ -176,11 +179,14 @@ function showQuiz(data, opts = {}) {
   updateProgress();
   updateCorrectCount(0, data.questions.length);
 
+  document.getElementById("checkBtn").textContent = t("Check");
   document.getElementById("checkBtn").onclick = () => {
     const r = checkAnswers(data);
     displayResult(r);
     updateCorrectCount(r.correct, r.total);
   };
+  document.getElementById("backBtn").textContent = t("Back");
+
   document.getElementById("resetBtn").onclick = () => {
     document.querySelectorAll("#questionsContainer input").forEach((i) => {
       i.value = "";
@@ -240,17 +246,19 @@ function checkAnswers(data) {
 // показываем результат
 function displayResult({ correct, total, feedback }) {
   const result = document.getElementById("result");
-  result.innerHTML = `<p>Правильних відповідей: ${correct} з ${total}.</p>`;
+  result.innerHTML = `<p>${t("Correct")}: ${correct} / ${total}</p>`;
+
   const list = document.createElement("ul");
   list.className = "list-group";
+
   feedback.forEach((f) => {
     const li = document.createElement("li");
     li.className = "list-group-item";
-    li.textContent = `Питання ${f.id}: ${f.ok ? "✓" : "✗"} (Ваша відповідь: "${
-      f.user
-    }", Очікувалося: "${f.expected}")`;
+    const status = f.ok ? `✓ ${t("Correct")}` : `✗ ${t("Wrong")}`;
+    li.textContent = `#${f.id}: ${status} ("${f.user}", ${t("Expected")}: "${f.expected}")`;
     list.append(li);
   });
+
   result.append(list);
 }
 
