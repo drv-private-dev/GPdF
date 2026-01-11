@@ -2,6 +2,7 @@
 import DataService from "./data/DataService.js";
 import Router from "./core/router/Router.js";
 import { initI18n, t, getLang, setLang } from "./core/i18n/i18n.js";
+import ThemeManager from "./core/theme/ThemeManager.js";
 const COURSE_TITLE = "Grammaire progressive du Français"; // change here to update title
 
 // ===== VERSION =====
@@ -9,7 +10,9 @@ const APP_VERSION = "1.0.007"; // <-- меняй здесь номер верс�
 // ====================
 
 initI18n();
+ThemeManager.initTheme();
 setupLangSelector();
+setupThemeSelector();
 applyStaticUiTranslations();
 
 async function loadJSON(url) {
@@ -34,6 +37,19 @@ function setupLangSelector() {
   });
 }
 
+function setupThemeSelector() {
+  const sel = document.getElementById("themeSelector");
+  if (!sel) return;
+
+  // Set current theme in the selector
+  sel.value = ThemeManager.getTheme();
+
+  sel.addEventListener("change", () => {
+    const next = sel.value;
+    ThemeManager.setTheme(next, { persist: true });
+  });
+}
+
 function applyStaticUiTranslations() {
   // Header subtitle
   const subtitle = document.getElementById("subtitleText");
@@ -44,6 +60,30 @@ function applyStaticUiTranslations() {
   if (langLabel) langLabel.textContent = t("Language");
   const langSel = document.getElementById("langSelector");
   if (langSel) langSel.setAttribute("aria-label", t("Language"));
+
+  // Theme selector label + aria-label + options
+  const themeLabel = document.getElementById("themeLabel");
+  if (themeLabel) themeLabel.textContent = t("Theme");
+  const themeSel = document.getElementById("themeSelector");
+  if (themeSel) {
+    themeSel.setAttribute("aria-label", t("Theme"));
+    Array.from(themeSel.options).forEach((opt) => {
+      switch (opt.value) {
+        case "light":
+          opt.textContent = t("ThemeLight");
+          break;
+        case "dark":
+          opt.textContent = t("ThemeDark");
+          break;
+        case "blue":
+          opt.textContent = t("ThemeBlue");
+          break;
+        case "green":
+          opt.textContent = t("ThemeGreen");
+          break;
+      }
+    });
+  }
 
   // Section selector label + placeholder option
   const sectionLabel = document.getElementById("sectionLabel");

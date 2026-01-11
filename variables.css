@@ -1,0 +1,22 @@
+:root {
+  --gpdf-body-bg: #ffffff;
+  --gpdf-body-color: #212529;
+  --gpdf-surface-bg: #ffffff;
+  --gpdf-border-color: #dee2e6;
+  --gpdf-muted-color: rgba(33, 37, 41, 0.65);
+  --gpdf-primary: #0d6efd;
+  --gpdf-primary-rgb: 13, 110, 253;
+  --gpdf-focus-ring: rgba(var(--gpdf-primary-rgb), 0.25);
+}
+
+:root {
+  --bs-body-bg: var(--gpdf-body-bg);
+  --bs-body-color: var(--gpdf-body-color);
+  --bs-border-color: var(--gpdf-border-color);
+  --bs-secondary-color: var(--gpdf-muted-color);
+  --bs-link-color: var(--gpdf-primary);
+  --bs-link-hover-color: var(--gpdf-primary);
+  --bs-primary: var(--gpdf-primary);
+  --bs-primary-rgb: var(--gpdf-primary-rgb);
+  --bs-focus-ring-color: var(--gpdf-focus-ring);
+}

@@ -1,0 +1,48 @@
+/* themes.css
+   Theme values for GPdF semantic tokens.
+   ThemeManager sets document.documentElement.dataset.theme.
+*/
+
+html[data-theme="light"] {
+  --gpdf-body-bg: #ffffff;
+  --gpdf-body-color: #212529;
+  --gpdf-surface-bg: #ffffff;
+  --gpdf-border-color: #dee2e6;
+  --gpdf-muted-color: rgba(33, 37, 41, 0.65);
+  --gpdf-primary: #0d6efd;
+  --gpdf-primary-rgb: 13, 110, 253;
+  --gpdf-focus-ring: rgba(var(--gpdf-primary-rgb), 0.25);
+}
+
+html[data-theme="dark"] {
+  --gpdf-body-bg: #0b0f14;
+  --gpdf-body-color: #e9ecef;
+  --gpdf-surface-bg: #111827;
+  --gpdf-border-color: rgba(233, 236, 239, 0.18);
+  --gpdf-muted-color: rgba(233, 236, 239, 0.65);
+  --gpdf-primary: #4dabf7;
+  --gpdf-primary-rgb: 77, 171, 247;
+  --gpdf-focus-ring: rgba(var(--gpdf-primary-rgb), 0.35);
+}
+
+html[data-theme="blue"] {
+  --gpdf-body-bg: #f4f9ff;
+  --gpdf-body-color: #102a43;
+  --gpdf-surface-bg: #ffffff;
+  --gpdf-border-color: rgba(16, 42, 67, 0.18);
+  --gpdf-muted-color: rgba(16, 42, 67, 0.65);
+  --gpdf-primary: #1d4ed8;
+  --gpdf-primary-rgb: 29, 78, 216;
+  --gpdf-focus-ring: rgba(var(--gpdf-primary-rgb), 0.25);
+}
+
+html[data-theme="green"] {
+  --gpdf-body-bg: #f3fbf6;
+  --gpdf-body-color: #0f2f1f;
+  --gpdf-surface-bg: #ffffff;
+  --gpdf-border-color: rgba(15, 47, 31, 0.18);
+  --gpdf-muted-color: rgba(15, 47, 31, 0.65);
+  --gpdf-primary: #198754;
+  --gpdf-primary-rgb: 25, 135, 84;
+  --gpdf-focus-ring: rgba(var(--gpdf-primary-rgb), 0.25);
+}
